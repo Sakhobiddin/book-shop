@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Css link -->
+    <link rel="stylesheet" href="../assets/style.css" />
+    <!-- Css link end -->
+    <!-- favicon -->
+    <link rel="icon" href="./images/icons8-books-48.png" />
+    <!-- favicon -->
+    <title>Book Shop</title>
+  </head>
+  <body>
+    <!-- container section -->
+    <div class="container"></div>
+    <!-- javascript link -->
+    <!-- Contact form -->
+    <div class="contact-form">
+      <div class="contact-info">
+        <h2>Fill the Application</h2>
+        <button class="close-delivery">&times;</button>
+      </div>
+      <form action="#">
+        <div class="user">
+          <div class="user-data">
+            <label for="fname">First Name</label>
+            <input
+              type="text"
+              id="fname"
+              name="fname"
+              placeholder="First Name"
+              autocomplete="off"
+            />
+            <div class="error"></div>
+            <label for="lname">Second Name</label>
+            <input
+              type="text"
+              id="lname"
+              name="lname"
+              placeholder="Last Name"
+              autocomplete="off"
+            />
+            <div class="error"></div>
+
+            <label for="data">Confirm Date</label>
+            <input type="date" id="date" name="data" />
+          </div>
+
+          <div class="user-address">
+            <label for="Street">Your Street</label>
+            <input
+              type="text"
+              id="street"
+              name="street"
+              placeholder="Street"
+              autocomplete="off"
+            />
+            <div class="error"></div>
+
+            <label for="houseNumber">House Number</label>
+            <input
+              type="number"
+              id="houseNumber"
+              name="houseNumber"
+              placeholder="Number"
+              autocomplete="off"
+            />
+
+            <label for="flatNumber">Flat Number</label>
+            <input
+              type="number"
+              id="flatNumber"
+              name="flatNumber"
+              placeholder="Number"
+              autocomplete="off"
+            />
+          </div>
+        </div>
+
+        <div class="methods">
+          <div class="payment-type">
+            <p>Choose the payment type</p>
+            <div class="cash">
+              <input type="radio" name="radio" id="payment-method" />
+              <label for="payment-method">Cash</label>
+            </div>
+            <div class="card">
+              <input type="radio" name="radio" id="payment-method" />
+              <label for="payment-method">Card</label>
+            </div>
+            <div class="btns">
+              <button class="complete-btn btn" type="button">Complete</button>
+              <button class="cancel-btn btn" type="reset">Cancel</button>
+            </div>
+          </div>
+
+          <div class="gifts">
+            <p>Choose 2 gifts (optional)</p>
+            <div class="gift">
+              <input
+                type="checkbox"
+                id="Pack"
+                name="Pack"
+                value="Pack as a gift"
+              />
+              <label for="Pack">Pack as a gift</label>
+            </div>
+
+            <div class="gift">
+              <input
+                type="checkbox"
+                id="postcard"
+                name="postcard"
+                value="Add postcard"
+              />
+              <label for="postcard">Add postcard</label>
+            </div>
+
+            <div class="gift">
+              <input
+                type="checkbox"
+                id="discount"
+                name="discount"
+                value="Provide 2% discount to the next time"
+              />
+              <label for="discount">Provide 2% discount to the next time</label>
+            </div>
+
+            <div class="gift">
+              <input
+                type="checkbox"
+                id="penPencil"
+                name="penPencil"
+                value="Branded pen or pencil"
+              />
+              <label for="penPencil">Branded pen or pencil</label>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- Contact form ended -->
+    <script src="../assets/script.js"></script>
+    <!-- javascript link -->
+  </body>
+</html>
