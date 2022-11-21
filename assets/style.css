@@ -1,0 +1,560 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "SF Pro Display", sans-serif;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+/* container style started */
+.container .hero-section img {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.container .hero-section .title {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container .hero-section .title h1 {
+  color: #d3c6e5;
+  font-size: 90px;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+.container .title button {
+  padding: 15px 50px;
+  margin-top: 35px;
+  border-radius: 30px;
+  border: 2px solid rgb(240, 131, 22);
+  background: transparent;
+}
+
+.container .title button:hover {
+  cursor: pointer;
+  transition: all 0.2s linear;
+  transform: translateY(-3px);
+  background-color: #ffff00;
+  transition: all 1s linear;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.container .title button:active {
+  box-shadow: none;
+  transition: all 1s linear;
+}
+
+.container .title button a {
+  text-decoration: none;
+  font-size: 30px;
+  color: #fff;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+.container .title button a:hover {
+  color: #1b1b1c;
+}
+
+.container .cart-field {
+  background: #e7e7e7;
+  width: 100%;
+  min-height: 100vh;
+  display: none;
+}
+
+.container .cart-field .cart-intro {
+  position: relative;
+}
+
+.container .cart-field .cart-intro h3 {
+  text-align: center;
+  font-size: 38px;
+  color: #1b1b1c;
+  padding: 40px 0px;
+  text-transform: uppercase;
+}
+
+.container .cart-field .cart-intro button {
+  position: absolute;
+  top: 35px;
+  right: 8%;
+  border: none;
+  background: transparent;
+  font-size: 60px;
+}
+
+.container .cart-field .carts {
+  width: 90%;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.container .cart-field .carts .card-intro h3 {
+  text-align: center;
+  font-size: 35px;
+  padding: 70px 0px;
+}
+
+.container .cart-field .carts .card-intro p {
+  font-size: 36px;
+}
+
+.container .cart-field .carts .card {
+  width: 22%;
+  background: #b4b4b4;
+  padding: 10px 15px;
+  margin: 20px 0px;
+  border-radius: 7px;
+}
+
+.container .cart-field .carts .card .card-img {
+  width: 100%;
+  height: 45vh;
+  border-radius: 5px;
+}
+
+.container .cart-field .carts .card .card-img img {
+  width: 100%;
+  height: 50vh;
+}
+
+.container .cart-field .carts .card .card-details h2 {
+  color: #343333;
+  letter-spacing: 1px;
+  font-size: 32px;
+  padding-top: 50px;
+  text-align: left;
+}
+
+/* Catalog style */
+.container .catalog {
+  background: #eee2de;
+  margin-top: -3px;
+  width: 100%;
+}
+
+.container .catalog h2 {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 550;
+  padding: 45px 0px;
+  color: #100f0f;
+}
+
+.container .catalog .book-cards {
+  padding: 20px 0px;
+  margin: 0px auto;
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.container .catalog .book-cards .show-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #6f7061e3;
+  width: 60%;
+  height: 50vh;
+}
+
+.container .catalog .book-cards .show-modal .show-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 30px;
+}
+
+.container .catalog .book-cards .show-modal .show-head h3 {
+  color: #e7e7e7;
+}
+
+.container .catalog .book-cards .show-modal .show-head button {
+  font-size: 50px;
+  border: none;
+  background: transparent;
+}
+
+.container .catalog .book-cards .show-modal .show-head button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: all 0.3s linear;
+  color: red;
+}
+
+.container .catalog .book-cards .show-modal p {
+  padding: 0px 30px;
+  color: #e7e7e7;
+  letter-spacing: 1px;
+  line-height: 30px;
+  font-size: 20px;
+}
+.catalog .book-cards .card {
+  width: 27%;
+  margin: 20px 0px;
+  border-radius: 10px;
+  padding: 10px 20px;
+  background: #b4b4b4;
+}
+.catalog .book-cards .card .card-img {
+  position: relative;
+}
+
+.catalog .book-cards .card .card-img .card-info {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.catalog .book-cards .card .card-img img {
+  width: 100%;
+  height: 45vh;
+  border-radius: 5px;
+}
+
+.catalog .book-cards .card .card-details {
+  padding: 10px 0;
+}
+
+.book-cards .card .card-details h2 {
+  color: #343333;
+  letter-spacing: 1px;
+  font-size: 32px;
+  padding-top: 5px;
+  text-align: left;
+}
+
+.book-cards .card .card-details h4 {
+  color: #343333;
+  padding-top: 10px;
+  letter-spacing: 1px;
+  font-size: 20px;
+  font-weight: 550;
+}
+.book-cards .card .card-details p {
+  color: #343333;
+  font-size: 25px;
+  padding: 10px 0px 20px 0px;
+}
+
+.book-cards .card .card-details .card-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* transition: all 0.2s linear;
+  transform: translateY(-5px); */
+}
+.book-cards .card .card-details .card-btn a {
+  color: #343333;
+  text-decoration: none;
+  border: 2px solid #8a2be2;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 550;
+  background: transparent;
+  outline: none;
+  border-radius: 4px;
+}
+.book-cards .card .card-details .card-btn a:hover {
+  background: #ffff00;
+  color: #8a2be2;
+  transition: all 1s linear;
+}
+
+.book-cards .card .card-details .card-btn button {
+  padding: 10px;
+  font-size: 18px;
+  color: #343333;
+  font-weight: 550;
+  border: 2px solid #8a2be2;
+  border-radius: 4px;
+}
+.book-cards .card .card-details .card-btn button:hover {
+  background: #04c404;
+  color: #fff;
+  transition: all 1s linear;
+}
+
+.catalog .modal-btn {
+  text-align: center;
+}
+
+.catalog .modal-btn button {
+  margin-bottom: 40px;
+  padding: 20px 50px;
+  font-size: 24px;
+  border-radius: 7px;
+  font-weight: 550;
+  color: #1b1b1c;
+}
+
+.catalog .modal-btn button:hover {
+  background: #04c404;
+  color: #fff;
+  transition: all 1s linear;
+}
+/* Catalog style ended */
+
+/* Order section */
+.cart-field .confirm-order {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.cart-field .confirm-order .confirm {
+  font-size: 24px;
+  padding: 20px 50px;
+  border-radius: 7px;
+  border: none;
+  color: #fff;
+  background: #1b1b1c;
+}
+
+.cart-field .confirm-order .confirm:hover {
+  cursor: pointer;
+  background-color: #343333;
+  transition: all 1s linear;
+}
+/* Order section ended*/
+
+/* contact section style */
+.container {
+  position: relative;
+  height: 100vh;
+}
+
+.contact-form {
+  display: none;
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  height: 100vh;
+  background: #b4b4b4;
+}
+.contact-form .contact-info {
+  width: 35%;
+  margin: 0px auto;
+  padding: 60px 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.contact-form .contact-info h2 {
+  font-size: 48px;
+  letter-spacing: 1px;
+  font-weight: 550;
+}
+.contact-form .contact-info button {
+  font-size: 50px;
+  border: none;
+  background: transparent;
+}
+
+.contact-form form {
+  margin: 0px auto;
+  width: 60%;
+  background: #eee2de;
+  padding: 15px 25px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+    rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+    rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+.contact-form form .user {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-form form .user .user-data {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form form .user .user-data label {
+  letter-spacing: 1.5px;
+  font-size: 20px;
+  padding: 25px 10px 5px 10px;
+  color: rgb(62, 60, 60);
+}
+
+.contact-form form .user .user-data input {
+  padding: 10px 10px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.contact-form form .user .user-address {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form form .user .user-address label {
+  letter-spacing: 1.5px;
+  font-size: 20px;
+  padding: 25px 10px 5px 10px;
+  color: rgb(62, 60, 60);
+}
+
+.contact-form form .user .user-address input {
+  padding: 10px 10px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.contact-form form .methods {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-form form .methods p {
+  padding: 20px 0px;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.contact-form form .methods .payment-type input {
+  cursor: pointer;
+}
+
+.contact-form form .methods .payment-type label {
+  letter-spacing: 1.5px;
+  font-size: 20px;
+  padding: 5px 6px;
+}
+
+.contact-form form .methods .gifts .gift label {
+  letter-spacing: 1.5px;
+  font-size: 20px;
+  padding: 5px 6px;
+}
+
+.contact-form form .methods .gifts .gift input {
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.error h6 {
+  color: rgb(248, 42, 42);
+  padding: 5px;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.contact-form form .methods .payment-type .btns {
+  margin: 30px 40px 30px 0px;
+}
+
+.contact-form form .methods .payment-type .btns .btn {
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  letter-spacing: 1px;
+}
+
+.contact-form form .methods .payment-type .btns .btn:hover {
+  cursor: pointer;
+  transform: translateY(-4px);
+  transition: all 0.3s linear;
+}
+
+.contact-form form .methods .payment-type .btns .complete-btn {
+  margin-right: 10px;
+}
+
+/* contact section style */
+
+/* Media Query Started */
+@media (min-width: 0px) and (max-width: 500px) {
+  .container .title {
+    position: absolute;
+    top: 10%;
+    text-align: center;
+  }
+
+  .container .hero-section .title h1 {
+    font-size: 40px;
+  }
+
+  .container .title button {
+    padding: 10px 30px;
+    margin-top: 15px;
+    border-radius: 30px;
+    border: 2px solid #8a2be2;
+    background: transparent;
+    outline: none;
+  }
+  .container .title button a {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+  }
+
+  .container .catalog h2 {
+    text-align: center;
+    font-size: 38px;
+    padding: 40px 0px;
+    letter-spacing: 1px;
+    color: #343333;
+  }
+
+  .container .catalog .book-cards {
+    width: 90%;
+    margin: 0px auto;
+    padding: 20px 0px;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .container .catalog .book-cards .card {
+    width: 100%;
+    margin: 15px 0px;
+    padding: 10px 20px;
+  }
+}
+
+/* Media Query ended */
